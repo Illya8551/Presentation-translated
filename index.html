@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas & New Year in Ukraine</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #8b0000, #c40000, #ff2a2a);
+      color: #ffffff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.25);
+      z-index: -1;
+    }
+
+    header {
+      position: relative;
+      z-index: 10;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      animation: glow 3s infinite alternate;
+    }
+
+    header p {
+      margin-top: 20px;
+      font-size: 1.3rem;
+      max-width: 650px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 25px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+      cursor: pointer;
+      transition: 0.5s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h2 {
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .card .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease, opacity 0.6s ease;
+      opacity: 0;
+    }
+
+    .card.open .content {
+      max-height: 900px;
+      opacity: 1;
+      margin-top: 20px;
+    }
+
+    .card p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .ua {
+      display: block;
+      font-style: italic;
+      opacity: 0.85;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .snow {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: url('https://cdn-icons-png.flaticon.com/256/5825/5825747.png');
+      background-size: 80px;
+      animation: snow 18s linear infinite;
+      opacity: 0.75;
+    }
+
+    @keyframes snow {
+      from { background-position: 0 0; }
+      to { background-position: 0 1200px; }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff; }
+      to { text-shadow: 0 0 30px #ffd700; }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.3rem; }
+      section { padding: 60px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="snow"></div>
+
+  <header>
+    <h1>🎄 Christmas & New Year in Ukraine 🎆</h1>
+    <p>
+      A magical time filled with traditions, family warmth, and festive joy.<br>
+      <span class="ua">Чарівний час, наповнений традиціями, родинним теплом і святковою радістю.</span>
+    </p>
+  </header>
+
+  <section>
+
+    <div class="card">
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/6240/6240457.png"> Christmas in Ukraine</h2>
+      <div class="content">
+        <p>
+          Christmas in Ukraine is celebrated on January 7th (Orthodox) and December 25th (Western).<br>
+          <span class="ua">Різдво в Україні святкують 7 січня (за православним календарем) та 25 грудня (за західною традицією).</span>
+
+          Families gather on Christmas Eve for the “Sviata Vecheria” dinner with 12 traditional dishes.<br>
+          <span class="ua">Родини збираються на Святвечір за святковою вечерею з 12 традиційних страв.</span>
+
+          Kutia is the main dish symbolizing prosperity.<br>
+          <span class="ua">Кутя — головна страва, що символізує достаток і благополуччя.</span>
+
+          People sing carols and decorate homes with didukh.<br>
+          <span class="ua">Люди колядують та прикрашають оселі дідухом.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/6240/6240457.png"> New Year Celebration</h2>
+      <div class="content">
+        <p>
+          New Year is a widely celebrated holiday in Ukraine.<br>
+          <span class="ua">Новий рік є одним із найпопулярніших свят в Україні.</span>
+
+          Families decorate trees and exchange gifts.<br>
+          <span class="ua">Родини прикрашають ялинки та обмінюються подарунками.</span>
+
+          At midnight people watch the President’s speech.<br>
+          <span class="ua">Опівночі люди дивляться новорічне звернення Президента.</span>
+
+          Fireworks and music fill the streets.<br>
+          <span class="ua">Вулиці наповнюються феєрверками та музикою.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/6240/6240457.png"> Holiday Traditions</h2>
+      <div class="content">
+        <p>
+          Ukrainian winter traditions include singing carols.<br>
+          <span class="ua">Українські зимові традиції включають колядування.</span>
+
+          People visit neighbors and share festive meals.<br>
+          <span class="ua">Люди відвідують сусідів та діляться святковими стравами.</span>
+
+          Decorations and lights create a festive atmosphere.<br>
+          <span class="ua">Прикраси та гірлянди створюють святкову атмосферу.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/6240/6240457.png"> Festive Food & Sweets</h2>
+      <div class="content">
+        <p>
+          Ukrainian holiday cuisine is rich and symbolic.<br>
+          <span class="ua">Українська святкова кухня багата та символічна.</span>
+
+          Traditional dishes include borscht, varenyky, and holubtsi.<br>
+          <span class="ua">Традиційні страви включають борщ, вареники та голубці.</span>
+
+          Sweet treats are an important part of celebrations.<br>
+          <span class="ua">Солодощі є важливою частиною святкувань.</span>
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 • Christmas & New Year in Ukraine
+  </footer>
+
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
